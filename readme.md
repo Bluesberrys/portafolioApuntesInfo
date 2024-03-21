@@ -1,1 +1,1 @@
-# personal notes portfolio for collage class 
+# personal notes portfolio for a collage class 
