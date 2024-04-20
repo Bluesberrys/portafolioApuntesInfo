@@ -149,149 +149,155 @@
 
     <!-- content -->
     <section class="container my-3">
-      <h1>Redes neuronales</h1>
-      <div>
-        <h2>Marco histórico</h2>
-        <p>
-          Las redes neuronales artificiales (RNA) tienen sus orígenes en los años 1940 y 1950, cuando los
-          investigadores comenzaron a estudiar la forma en que el cerebro humano procesa la información. En
-          1943, el neurofisiólogo Warren McCulloch y el matemático Walter Pitts desarrollaron el primer modelo
-          computacional de una neurona artificial. Posteriormente, en 1949, Donald Hebb propuso una regla de
-          aprendizaje para ajustar los pesos de las conexiones entre las neuronas artificiales.
-        </p>
-        <p>
-          En la década de 1960, Frank Rosenblatt introdujo el concepto de "Perceptrón", una red neuronal capaz
-          de aprender patrones simples. Sin embargo, en 1969, Marvin Minsky y Seymour Papert publicaron un
-          libro que señalaba las limitaciones del Perceptrón, lo que provocó un declive en la investigación y
-          desarrollo de las redes neuronales durante varios años.
-        </p>
-        <p>
-          No fue hasta mediados de la década de 1980 cuando el interés por las redes neuronales resurgió
-          gracias a los avances en el algoritmo de retropropagación (backpropagation) desarrollado por David
-          Rumelhart, Geoffrey Hinton y Ronald Williams. Este algoritmo permitió entrenar redes neuronales
-          multicapa, lo que amplió significativamente su capacidad para resolver problemas más complejos.
-        </p>
-      </div>
+      <h1>Sistemas expertos</h1>
       <div>
         <h2>Definición</h2>
         <p>
-          Las redes neuronales artificiales son modelos computacionales inspirados en el funcionamiento del
-          cerebro humano y el sistema nervioso biológico. Están diseñadas para imitar la forma en que las
-          neuronas biológicas procesan y transmiten información a través de conexiones ponderadas llamadas
-          "pesos". Estas redes están compuestas por nodos interconectados (neuronas artificiales) que operan
-          en paralelo y son capaces de aprender a partir de ejemplos.
+          Un sistema experto es un sistema informático que emula la capacidad de toma de decisiones de un
+          experto humano en un dominio específico. Estos sistemas utilizan una base de conocimientos que
+          contiene información sobre un área particular y un motor de inferencia que aplica reglas lógicas
+          para deducir nuevos hechos o recomendaciones a partir de esa base de conocimientos.
         </p>
-        <img src="../../img/AI/redesNeuro/neuralNetworkDiagram.png" class="img-fluid mb-3 w-100" alt="" />
       </div>
       <div>
-        <h2>Clasificación de RNA</h2>
-        <p>
-          Existen varios tipos de redes neuronales artificiales, cada una con sus propias características y
-          aplicaciones. Algunas de las más comunes son:
-        </p>
+        <h2>Conceptos generales</h2>
+        <p>Los sistemas expertos se basan en los siguientes conceptos clave:</p>
+        <ul>
+          <li>
+            Base de conocimientos: Es una colección estructurada de hechos, reglas, casos y relaciones que
+            representan el conocimiento de un experto humano en un dominio específico.
+          </li>
+          <li>
+            Motor de inferencia: Es el componente que procesa la base de conocimientos y realiza el
+            razonamiento lógico para llegar a conclusiones o recomendaciones.
+          </li>
+          <li>
+            Interfaz de usuario: Es el medio a través del cual el usuario interactúa con el sistema experto,
+            ingresando información y recibiendo respuestas o recomendaciones.
+          </li>
+          <li>
+            Adquisición de conocimiento: Es el proceso de extraer, organizar y representar el conocimiento de
+            expertos humanos en una forma que pueda ser utilizada por el sistema experto.
+          </li>
+          <li>
+            Explicación: La capacidad del sistema experto de explicar y justificar sus conclusiones o
+            recomendaciones, lo que lo hace más transparente y confiable.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Arquitectura de Sistemas Expertos</h2>
+        <p>La arquitectura típica de un sistema experto consta de los siguientes componentes:</p>
+        <ul>
+          <li>
+            Base de conocimientos: Almacena el conocimiento del dominio en forma de reglas, hechos y casos.
+          </li>
+          <li>
+            Motor de inferencia: Utiliza técnicas de razonamiento para deducir nuevos hechos o conclusiones a
+            partir de la base de conocimientos.
+          </li>
+          <li>
+            Memoria de trabajo: Almacena los hechos temporales y las conclusiones intermedias durante el
+            proceso de razonamiento.
+          </li>
+          <li>Interfaz de usuario: Facilita la interacción entre el usuario y el sistema experto.</li>
+          <li>
+            Módulo de explicación: Proporciona una explicación comprensible de las conclusiones o
+            recomendaciones del sistema.
+          </li>
+          <li>
+            Módulo de adquisición de conocimiento: Permite a los expertos humanos ingresar y modificar el
+            conocimiento en la base de conocimientos.
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Diseño de Sistemas Expertos</h2>
+        <p>El diseño de un sistema experto implica los siguientes pasos:</p>
         <ol>
           <li>
-            Perceptrón Multicapa (MLP): Consiste en una capa de entrada, una o más capas ocultas y una capa de
-            salida. Se utiliza comúnmente para problemas de clasificación y regresión.
+            Identificación del dominio: Definir el área de conocimiento en la que el sistema experto operará.
           </li>
           <li>
-            Redes Neuronales Recurrentes (RNN): Son adecuadas para el procesamiento de secuencias de datos,
-            como el reconocimiento de voz, el procesamiento de lenguaje natural y la predicción de series de
-            tiempo.
+            Adquisición de conocimiento: Recopilar el conocimiento relevante de expertos humanos a través de
+            entrevistas, análisis de documentos y observación.
           </li>
           <li>
-            Redes Neuronales Convolucionales (CNN): Están diseñadas específicamente para el procesamiento de
-            datos en forma de imágenes, reconocimiento de patrones y visión por computadora.
+            Representación del conocimiento: Estructurar y codificar el conocimiento adquirido en una forma
+            que pueda ser procesada por el sistema experto, como reglas de producción, redes semánticas o
+            marcos.
           </li>
           <li>
-            Redes Neuronales de Base Radial (RBF): Utilizan funciones de base radial como funciones de
-            activación y son útiles en problemas de interpolación y aproximación de funciones.
+            Diseño del motor de inferencia: Seleccionar e implementar un mecanismo de razonamiento adecuado
+            para el dominio, como encadenamiento hacia adelante, encadenamiento hacia atrás o razonamiento
+            basado en casos.
           </li>
           <li>
-            Redes Neuronales Autoorganizadas (SOM): Se utilizan para el análisis de datos y la visualización
-            de patrones.
+            Desarrollo de la interfaz de usuario: Crear una interfaz amigable e intuitiva para que los
+            usuarios interactúen con el sistema experto.
+          </li>
+          <li>
+            Pruebas y validación: Evaluar el rendimiento y la precisión del sistema experto mediante pruebas
+            exhaustivas y la validación por parte de expertos humanos.
+          </li>
+          <li>
+            Mantenimiento y actualización: Mantener y actualizar el sistema experto a medida que se adquiere
+            nuevo conocimiento o se producen cambios en el dominio.
           </li>
         </ol>
       </div>
       <div>
-        <h2>Estructura</h2>
-        <p>Una red neuronal artificial típica consta de tres tipos de capas:</p>
-        <ol>
-          <li>Capa de entrada: Recibe los datos de entrada para su procesamiento.</li>
+        <h2>Ejemplos</h2>
+        <p>Algunos ejemplos de sistemas expertos exitosos incluyen:</p>
+        <ul>
           <li>
-            Capas ocultas: Realizan los cálculos y transformaciones necesarias sobre los datos de entrada.
-            Pueden haber una o más capas ocultas, dependiendo de la complejidad del problema.
+            MYCIN: Un sistema experto médico diseñado para diagnosticar y recomendar tratamientos para
+            enfermedades infecciosas.
           </li>
           <li>
-            Capa de salida: Proporciona la salida final de la red neuronal después de procesar los datos de
-            entrada a través de las capas ocultas.
-          </li>
-        </ol>
-        <p>
-          Cada neurona artificial en una capa está conectada a todas las neuronas de la capa siguiente
-          mediante conexiones ponderadas llamadas "pesos". Estos pesos se ajustan durante el proceso de
-          aprendizaje para optimizar el rendimiento de la red.
-        </p>
-        <h5>Aprendizaje:</h5>
-        <p>
-          El aprendizaje en las redes neuronales artificiales se refiere al proceso de ajustar los pesos de
-          las conexiones entre las neuronas para minimizar el error entre la salida predicha y la salida
-          deseada. Existen varios algoritmos de aprendizaje, pero los más comunes son:
-        </p>
-        <ol>
-          <li>
-            Aprendizaje supervisado: Se proporciona a la red un conjunto de datos de entrenamiento con
-            entradas y salidas deseadas. La red ajusta sus pesos para minimizar el error entre las salidas
-            predichas y las salidas deseadas.
+            PROSPECTOR: Un sistema experto utilizado en la exploración y evaluación de yacimientos minerales.
           </li>
           <li>
-            Aprendizaje no supervisado: La red aprende patrones y características a partir de los datos de
-            entrada sin conocer las salidas deseadas.
+            XCON: Un sistema experto desarrollado por Digital Equipment Corporation para configurar sistemas
+            informáticos.
           </li>
           <li>
-            Aprendizaje por refuerzo: La red aprende a tomar decisiones basadas en recompensas o
-            penalizaciones recibidas por sus acciones en un entorno determinado.
+            DENDRAL: Un sistema experto utilizado en la identificación de estructuras moleculares a partir de
+            datos espectroscópicos.
           </li>
-        </ol>
+        </ul>
       </div>
       <div>
         <h2>Aplicaciones</h2>
-        <p>
-          Las redes neuronales artificiales tienen una amplia gama de aplicaciones en diversos campos,
-          incluyendo:
-        </p>
-        <ol>
+        <p>Los sistemas expertos se utilizan en una amplia gama de áreas, incluyendo:</p>
+        <ul>
           <li>
-            Reconocimiento de patrones: Reconocimiento de voz, reconocimiento facial, detección de objetos en
-            imágenes, etc.
+            Medicina: Diagnóstico y tratamiento de enfermedades, análisis de pruebas de laboratorio,
+            planificación de terapias.
           </li>
           <li>
-            Procesamiento de lenguaje natural: Traducción automática, análisis de sentimientos, generación de
-            texto, etc.
+            Ingeniería: Diseño de productos, mantenimiento y reparación de equipos, control de procesos
+            industriales.
           </li>
           <li>
-            Predicción y pronóstico: Predicción de series de tiempo, predicción de precios de acciones,
-            pronósticos meteorológicos, etc.
+            Finanzas: Análisis de riesgos crediticios, gestión de carteras de inversión, detección de fraudes.
           </li>
           <li>
-            Control y optimización: Control de procesos industriales, optimización de rutas, control de
-            robots, etc.
+            Agricultura: Diagnóstico de enfermedades de cultivos, recomendaciones de fertilización y riego.
           </li>
+          <li>Educación: Sistemas tutoriales inteligentes, evaluación del rendimiento estudiantil.</li>
           <li>
-            Minería de datos y análisis: Agrupamiento de datos, detección de fraudes, análisis de mercado,
-            etc.
+            Transporte: Planificación de rutas, programación de vuelos, diagnóstico de fallos en vehículos.
           </li>
-          <li>
-            Medicina: Diagnóstico de enfermedades, análisis de imágenes médicas, predicción de riesgos, etc.
-          </li>
-          <li>Finanzas: Análisis de riesgos, evaluación de créditos, detección de fraudes, etc.</li>
-        </ol>
-        <p>
-          Estas son solo algunas de las aplicaciones más destacadas de las redes neuronales artificiales. A
-          medida que avanza la investigación y el desarrollo en este campo, surgen continuamente nuevas
-          aplicaciones y mejoras en los modelos existentes.
-        </p>
+          <li>Militar: Planificación de operaciones, análisis de inteligencia, simulación de combate.</li>
+          <li>Seguridad: Detección de intrusos, análisis de patrones de comportamiento sospechosos.</li>
+        </ul>
       </div>
+      <p>
+        En resumen, los sistemas expertos son herramientas poderosas que permiten capturar y aplicar el
+        conocimiento y la experiencia de expertos humanos en diversos dominios, brindando soluciones precisas
+        y eficientes a problemas complejos.
+      </p>
     </section>
 
     <!-- footer -->
